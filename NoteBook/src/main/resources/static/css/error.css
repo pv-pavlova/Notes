@@ -1,0 +1,57 @@
+body {
+  height: 100vh;
+  background-image: url(bg-01.jpg);
+  background-position: 0 35%;
+  background-size: 40vw;
+  background-repeat: no-repeat;
+  background-color: #FAF191;
+  color: #555;
+  display: flex;
+  flex-direction: column;
+}
+
+.menu {
+  width: 100%;
+  background-color: #555;
+  overflow: auto;
+}
+
+.menu a {
+  float: left;
+  text-align: center;
+  padding: 12px;
+  color: white;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* Navbar links on mouse-over */
+.menu a:hover {
+  background-color: #000;
+}
+
+/* Current/active navbar link */
+.active {
+  background-color: #04AA6D;
+}
+
+.container {
+  background-color: transparent;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  background-color: #A586B8;
+  border-radius: 15px;
+  padding: 50px;
+  width: 40%;
+}
+

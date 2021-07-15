@@ -1,0 +1,152 @@
+body {
+  height: 100vh;
+  background-image: url(bg-01.jpg);
+  background-position: 0 35%;
+  background-size: 40vw;
+  background-repeat: no-repeat;
+  background-color: #FAF191;
+  color: #555;
+  display: flex;
+  flex-direction: column;
+}
+
+.menu {
+  width: 100%;
+  background-color: #555;
+  overflow: auto;
+}
+
+
+
+.menu a {
+  float: left;
+  text-align: center;
+  padding: 12px;
+  color: white;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+
+
+/* Current/active navbar link */
+.active {
+  background-color: #04AA6D;
+  height: 100%;
+
+}
+
+.item {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.itemgr {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  width: 100%;
+  margin-bottom: 10px;
+  color: white;
+}
+
+
+
+.search-form-block {
+  margin-right: 100px;
+}
+.search-form {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+.search-form-row {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+.search-place {
+  min-width: 290px;
+  margin-right: 10px;
+}
+.search-form-row .form-item {
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 0px;
+}
+.search-form-row .form-label{
+  width: 100%;
+  cursor: pointer;
+}
+.search-form-checkboxes {
+  margin-left: 15px;
+}
+.search-form-checkboxes .form-item {
+  margin-right: 10px;
+}
+.search-form-checkboxes input {
+  position: absolute;
+  top: -999px;
+}
+.search-form-checkboxes .form-label{
+  opacity: 0.6;
+}
+.search-form-checkboxes input:checked + .form-label {
+  text-decoration: underline;
+  opacity: 1;
+}
+.user-block {
+  display: flex;
+  align-items: center;
+}
+
+.button {
+  background-color: #04AA6D;
+  color: #555;
+  transition: opacity 0.4s;
+  font-size: 20px;
+  padding: 5px 40px;
+  outline: none;
+  border-radius: 5px;
+}
+
+.content {
+  flex-grow: 1;
+  display: flex;
+}
+
+.search {
+  padding: 50px 0px;
+}
+.result-items {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  margin-top: 50px;
+}
+.result-item {
+  width: calc(25% - 6px);
+  margin-right: 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 50px;
+  background-color:#04AA6D;;
+  opacity: .7;
+  box-shadow: 0 5px 5px -5px #a2a2d0;
+  margin-bottom: 8px;
+}
+.result-item:nth-of-type(5n - 1) {
+  margin-right: 0px;
+}
+.result-item-title {
+  font-size: 20px;
+  font-weight: 600;
+}
+.result-item-content {
+  font-size: 18px;
+}
